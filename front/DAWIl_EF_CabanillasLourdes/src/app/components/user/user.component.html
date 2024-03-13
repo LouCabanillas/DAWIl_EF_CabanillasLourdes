@@ -1,0 +1,46 @@
+<div class="content-wrapper">
+    <div class="sidebar">
+      <ul>
+        <li class="bold-and-large">
+          <a href="user">User</a>
+        </li>
+        <br>
+        <li class="bold-and-large">
+          <a href="ticket">Ticket</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="main-content">
+
+        <div style="margin: 50px;">
+            <h2>Listado de Usuarios</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Nombre</th>
+                  <th>Apellido</th>
+                  <th>Usuario</th>
+                  <th>Correo</th>
+                  <th>Kind</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let user of users">
+                  <td>{{ user.id }}</td>
+                  <td>{{ user.name }}</td>
+                  <td>{{ user.lastname }}</td>
+                  <td>{{ user.username }}</td>
+                  <td>{{ user.email }}</td>
+                  <td>{{ user.kind }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+    </div>
+  </div>
+
+
+  

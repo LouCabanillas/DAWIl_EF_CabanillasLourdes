@@ -1,0 +1,31 @@
+/* You can add global styles to this file, and also import other style files */
+.ng-valid:not(form).ng-touched   {
+    border-left: 5px solid #42A948; /* green */
+  }
+ 
+.ng-invalid:not(form).ng-touched  {
+    border-left: 5px solid #a94442; /* red */
+  }
+
+  footer {
+    background-color: black;
+}
+
+header {
+    background: url(https://media.licdn.com/dms/image/C4E16AQFfKM_LQxQuKQ/profile-displaybackgroundimage-shrink_350_1400/0/1636660372823?e=1715817600&v=beta&t=WJX3RWWsoxh0zd6m3YwnoQ0ss4GjhV7A2BcjrBnS1Ac)
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .jumbotron {
+    margin-bottom: 0;
+  }

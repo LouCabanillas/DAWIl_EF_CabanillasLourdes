@@ -1,0 +1,52 @@
+<div class="content-wrapper">
+    <div class="sidebar">
+      <ul>
+        <li class="bold-and-large">
+          <a href="user">User</a>
+        </li>
+        <br>
+        <li class="bold-and-large">
+          <a href="ticket">Ticket</a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="main-content">
+
+        <div style="margin: 50px;">
+            <h2>Listado de Usuarios</h2>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Kind</th>
+                  <th>User</th>
+                  <th>Project</th>
+                  <th>Category</th>
+                  <th>Priority</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let ticket of tickets">
+                  <td>{{ ticket.id }}</td>
+                  <td>{{ ticket.title }}</td>
+                  <td>{{ ticket.description }}</td>
+                  <td>{{ ticket.kind?.name }}</td>
+                  <td>{{ ticket.user?.name }}</td>
+                  <td>{{ ticket.project?.name }}</td>
+                  <td>{{ ticket.category?.name }}</td>
+                  <td>{{ ticket.priority?.name }}</td>
+                  <td>{{ ticket.status?.name }}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+    </div>
+  </div>
+
+
+  
