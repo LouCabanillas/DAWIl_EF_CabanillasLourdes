@@ -8,6 +8,4 @@
     </a>
 </p>
 
-<p align="center"><a href="https://vps.rarcos.com:10451/" target="_blank">Try the demo online</a></p>
-
 # Examen Final DAWII
